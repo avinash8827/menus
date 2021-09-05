@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+        <title>Document</title>
+        <style>
+            body{
+                background-image: url("img/1.png"); 
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.8em;
+            }
+            .nav{
+                width: 1038px;
+                height: 50px;
+                background:#333;
+                margin:20px auto; 
+            }
+            .nav > ul{
+                list-style:none;
+                height: 100% !important;
+            }
+            .nav > ul > li:hover > a{
+                background:#FF6347;
+            }
+            .nav > ul > li{
+                float: left;
+            }
+            .nav > ul > li > a{
+                display: inline-block;
+                height: 12px;
+                line-height: 12px;
+                padding: 19px;
+                color:#fff;
+                text-decoration: none;
+
+            }
+            .a2{
+                background:#FF6347;
+            }
+            .img{
+                background-image: url("img/fo.png");
+                background-repeat: no-repeat;
+                background-size: 15px 15px;
+                background-position:0px 15px;
+            }
+            .menu1{
+                position: absolute;
+                top:50px;
+                left: 0px;
+                list-style: none;
+                padding-left: 0px;
+                display: none;
+            }
+            .menu > li{
+                position: relative;
+            }
+            .menu1 > li > a{
+                display: block;
+                width: 250px;
+                height: 60px;
+                padding-left: 26px;
+                line-height: 60px;
+                background:#fff;
+                color: #55555a;
+                text-decoration: none;
+            }
+            .menu1 .fa-chevron-left{
+            }
+            .menu > li > .submenu > li > a:hover{
+                background:#ff6347;
+                color:#fff;
+            }
+            .menu2{
+                width: 191px;
+                height: 300px;
+                background: #fff;
+                position: absolute;
+                top: 0px;
+                left: 250px !important;
+
+            }
+            .menu1 > li{
+                position: relative;
+            }
+
+            .menu li:hover > .menu1{
+                display: block;
+            }
+            .menu li:hover > a{
+                background:#FF6347;
+                color:#fff;
+            }
+            .menu3{
+                width: 191px;
+                height: 150px;
+                background: #fff;
+                position: absolute;
+                bottom: 50px;
+                left: 250px !important;
+            }
+            .menu4{
+                width: 1038px;
+                height: 280px;
+                background:#fff;
+                position: absolute;
+                top: 30px;
+                margin: 20px auto;
+                left: -371px;
+            }
+            .menu5{
+                width: 191px;
+                height: 150px;
+                background: #fff;
+                position: absolute;
+                bottom: 40px;
+                left: -250px !important;
+            }
+            .menu6{
+                width: 1038px;
+                height: 50px;
+                background:#fff;
+                position: absolute;
+                top: 30px;
+                margin: 20px auto;
+                left: -568px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="img"> Company Logo</a>
+                </li>
+                <li> 
+                    <a href="#" class="a2" >Active <i class="fas fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="#" >Drop Down <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu1">
+                        <li>
+                            <a href="#">Item one</a>
+                        </li>
+                        <li>
+                            <a href="#">Items Right Side <i class="fas fa-chevron-left"></i></a>
+                            <ul class="menu1 menu2">
+                                <li>
+                                    <a href="#"> level2  <i class="fas fa-chevron-left"></i></a>
+                                    <ul class="menu1 menu2 menu3">
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-chevron-left"></i></a>
+                                        <ul class="menu1 menu2 menu3">
+                                            <li>
+                                                <a href="#"> level3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> level3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> level3</a>
+                                            </li>
+                                            
+    
+                                        </ul>
+                                    </li>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-chevron-left"></i></a>
+                                    <ul class="menu1 menu2 menu3">
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-chevron-left"></i></a>
+                                    <ul class="menu1 menu2 menu3">
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-chevron-left"></i></a>
+                                    <ul class="menu1 menu2 menu3">
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> level3</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Item left side <i class="fas fa-chevron-left"></i></a>
+                            <ul class="menu1 menu5">
+                                <li>
+                                    <a href="#"> level2 <i class="fab fa-forumbee"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-bed"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fal fa-car"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-heartbeat"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="far fa-bookmark"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"> level2 <i class="fas fa-bell"></i></a>
+                                </li>
+
+                            </ul>
+                        <li>
+                            <a href="#">Item 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Mega Menu <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu menu1 menu4"></ul>
+                </li>
+                <li>
+                    <a href="#">Grid <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Tab Bar <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu menu1 menu6"></ul>
+                </li>
+                <li>
+                    <a href="#">Images <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                    <a href="#" >Contact <i class="fas fa-chevron-down"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+    </body>
+</html>
